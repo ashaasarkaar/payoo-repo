@@ -17,18 +17,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- icons -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <style>
-        *{
+        * {
             font-family: "Outfit", sans-serif;
         }
     </style>
 </head>
 
 <body class="min-h-screen max-w-md bg-base-200 mx-auto">
-    <h1>Hello World</h1>
+
+    <!-- login page Logo start-->
+    <div class="logo w-[200px] mx-auto pt-32">
+        <img src="./assets/Logo-full.png" alt="logo image">
+    </div>
+     <!-- login page Logo end-->
+
+    <!-- login page form start-->
+    <div class="form pt-10 max-w-sm mx-auto">
+        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow rounded-2xl">
+            <div class="card-body">
+                <fieldset class="fieldset">
+                    <label class="label text-neutral font-bold">Mobile Number</label>
+                    <input id="input-number" type="text" maxlength="11" minlength="11" class="input rounded-full bg-base-200" placeholder="Enter your number" value="01540785135" />
+                    <br>
+                    <label class="label text-neutral font-bold">4 Digit Pin</label>
+                    <input id="input-pin" type="password" class="input rounded-full bg-base-200" maxlength="4" placeholder="Enter 4 Digit Pin" />
+                    <button id="login-btn" class="btn btn-primary mt-4 rounded-full font-semibold">Login</button>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    <!-- login page form end -->
+
+
+    <!-- js connected link -->
+     <script src="./script/login.js"></script>
 </body>
 
 
